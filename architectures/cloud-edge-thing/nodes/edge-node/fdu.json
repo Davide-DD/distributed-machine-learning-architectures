@@ -1,0 +1,58 @@
+{
+    "uuid": "93324e47-d693-4d3f-b452-12a46d86b056",
+    "name": "test_1",
+    "computation_requirements": {
+        "cpu_arch": "x86_64",
+        "cpu_min_freq": 0,
+        "cpu_min_count": 1,
+        "ram_size_mb": 128.0,
+        "storage_size_gb": 10.0
+    },
+    "configuration": {
+        "conf_type": "CLOUD_INIT",
+        "script": "#cloud-config\nruncmd:\n  - [ sh, -xc, 'python3 -u /home/ubuntu/code/server.py > /home/ubuntu/log.txt' ]"
+    },
+    "image": {
+        "uri": "file:///home/osboxes/Scrivania/cloud-edge-thing/edge-node/edge.tar.gz",
+        "checksum": "",
+        "format": "tar.gz"
+    },
+    "hypervisor": "LXD",
+    "migration_kind": "COLD",
+    "interfaces": [
+        {
+            "name": "eth0",
+            "is_mgmt": false,
+            "if_type": "INTERNAL",
+            "virtual_interface": {
+                "intf_type": "VIRTIO",
+                "vpci": "eth0",
+                "bandwidth": 10
+            },
+            "cp_id": "b93d8418-d1c1-4bc2-8ae8-f222fd88e1dc"
+        },
+        {
+            "name": "eth1",
+            "is_mgmt": false,
+            "if_type": "INTERNAL",
+            "virtual_interface": {
+                "intf_type": "VIRTIO",
+                "vpci": "eth1",
+                "bandwidth": 10
+            },
+            "cp_id": "b1c93404-6806-4e69-88eb-989b75310e0b"
+        }
+    ],
+    "io_ports": [],
+    "connection_points": [
+        {
+            "uuid": "b93d8418-d1c1-4bc2-8ae8-f222fd88e1dc",
+            "pair_id": "6cc2aa30-1dcf-4c93-a57e-433fd0bd498e"
+        },
+        {
+            "uuid": "b1c93404-6806-4e69-88eb-989b75310e0b",
+            "pair_id": "0a851ac8-a9e5-4c88-bf90-c2a81e22a310"
+        }
+    ],
+    "depends_on": []
+}

@@ -1,0 +1,43 @@
+{
+    "uuid": "1e57bb0e-cb41-4b23-bca3-1fa761a83c10",
+    "name": "test_1",
+    "computation_requirements": {
+        "cpu_arch": "x86_64",
+        "cpu_min_freq": 0,
+        "cpu_min_count": 1,
+        "ram_size_mb": 128.0,
+        "storage_size_gb": 10.0
+    },
+    "configuration": {
+        "conf_type": "CLOUD_INIT",
+        "script": ""
+    },
+    "image": {
+        "uri": "file:///home/osboxes/Scrivania/cloud-edge-thing/cloud-node/cloud.tar.gz",
+	"checksum": "",
+	"format": "tar.gz"
+    },
+    "hypervisor": "LXD",
+    "migration_kind": "COLD",
+    "interfaces": [
+        {
+            "name": "eth0",
+            "is_mgmt": false,
+            "if_type": "INTERNAL",
+            "virtual_interface": {
+                "intf_type": "VIRTIO",
+                "vpci": "0:0:0",
+                "bandwidth": 10
+            },
+            "cp_id": "bbd9595b-75c5-414c-9d9d-8811838be1f7"
+        }
+    ],
+    "io_ports": [],
+    "connection_points": [
+	{
+            "uuid": "bbd9595b-75c5-414c-9d9d-8811838be1f7",
+            "pair_id": "6cc2aa30-1dcf-4c93-a57e-433fd0bd498e"
+        }
+    ],
+    "depends_on": []
+}

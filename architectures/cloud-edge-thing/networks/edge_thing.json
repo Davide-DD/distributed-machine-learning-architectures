@@ -1,0 +1,15 @@
+{
+    "uuid": "0a851ac8-a9e5-4c88-bf90-c2a81e22a310",
+    "name": "edge_thing_net",
+    "net_type": "ELAN",
+    "is_mgmt": false,
+    "vlan_id": 75,
+    "ip_configuration": {
+        "ip_version": "IPV4",
+        "subnet": "192.168.235.0/24",
+        "gateway": "192.168.235.1",
+        "dhcp_enable": true,
+        "dhcp_range": "192.168.235.2,192.168.235.100",
+        "dns": "8.8.8.8,8.8.4.4"
+    }
+}
