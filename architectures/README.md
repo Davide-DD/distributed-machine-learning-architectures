@@ -11,5 +11,7 @@ Concluding, in the last two architectures can be found a folder named **tests** 
 - test_generator.py: it permits to easily create a test architecture composed by many nodes
 - test_executor.py: it permits to easily instantiate all the nodes by which a test architecture is composed
 - test_killer.sh: it permits to stop a test execution through sending signals to the running nodes
+
 The federated learning architecture also offers a test_plan.py, that permits to send a sequence of task to the coordinator in order to execute them one after the other.
+
 If you are interested in more details about the aforementioned architectures, check out my master thesis [here]().
