@@ -14,4 +14,4 @@ Concluding, in the last two architectures can be found a folder named **tests** 
 
 The federated learning architecture also offers a **test_plan.py**, that permits to send a sequence of task to the coordinator in order to execute them one after the other.
 
-If you are interested in more details about the aforementioned architectures, check out my master thesis [here]().
+If you are interested in more details about the aforementioned architectures, check out my master thesis [here](https://amslaurea.unibo.it/19021/1/Tesi_Davide_Di_Donato.pdf).
